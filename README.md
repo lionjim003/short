@@ -1,3 +1,5 @@
+#short
+
 Usage: short STRING...
 Print scripts that contain STRING... as content.
 
