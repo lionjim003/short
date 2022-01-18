@@ -10,5 +10,5 @@ letters when executed. short also appends argument list to the end of content.
 short  STRING!...
 short  STRING## STRING...
 ```
-Append `!` to end of STRING to disable path expansion and drive letter replace.
+Append `!` to end of STRING to disable path expansion and drive letter replace.  
 Append `##` to end of STRING to concatenate the next STRING.
