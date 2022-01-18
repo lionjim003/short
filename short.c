@@ -16,16 +16,14 @@
 Usage: "PROGRAM_NAME" STRING...\n\
 Print scripts that contain STRING... as content.\n\
 \n\
-Expands to absolute path when STRING is a relative path and replaces the drive\n\
-letter when executed. "PROGRAM_NAME" also appends argument list to the end of content.\n\
+Expand to absolute path when STRING is a relative path and replaces the drive\n\
+letters when executed. "PROGRAM_NAME" also appends argument list to the end of content.\n\
 \n\
-	"PROGRAM_NAME"  "DISABLE" STRING...\n\
-	"PROGRAM_NAME"  STRING... "DISABLE"\n\
-	"PROGRAM_NAME"  STRING1 "CONNECT" STRING2\n\
+	"PROGRAM_NAME"  STRING"DISABLE"...\n\
+	"PROGRAM_NAME"  STRING"CONNECT" STRING...\n\
 \n\
-Use '"DISABLE"' to disable path expansion and drive letter replace in the next STRING.\n\
-Use '"DISABLE"' at the end of content to disable argument list appending.\n\
-Use '"CONNECT"' to concatenate the previous STRING and the next STRING.\n\
+Append '"DISABLE"' to end of STRING to disable path expansion and drive letter replace.\n\
+Append '"CONNECT"' to end of STRING to concatenate the next STRING.\n\
 ", stdout),0
 
 #define VERSION() \
